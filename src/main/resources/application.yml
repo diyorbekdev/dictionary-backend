@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+mybatis:
+  mapper-locations:
+    - "classpath*:/sqlMaps/**/*.xml"
+    - "classpath*:/sqlMaps/*.xml"
+  config-location: classpath:mybatis-config.xml
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:ORCL
+    username: oracle
+    password: oracle
+    driverClassName: oracle.jdbc.OracleDriver
