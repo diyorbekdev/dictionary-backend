@@ -38,6 +38,7 @@ public class TranslationsResource {
         return ResponseEntity.ok(studentsBean);
     }
 
+
     @RequestMapping(value = "translations", method = RequestMethod.POST)
     public ResponseEntity create(@RequestBody StudentsBean studentsBean) {
         return ResponseEntity.ok(studentsBean);
